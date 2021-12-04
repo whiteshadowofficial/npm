@@ -1,10 +1,10 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/Kaweeshachamodk/Base /root/WhatsAsenaDuplicated
+RUN git clone https://github.com/Kaweeshachamodk/npm /root/WhatsAsenaDuplicated
 WORKDIR /root/WhatsAsenaDuplicated/
 ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
 RUN yarn install --no-audit
-RUN git clone https://github.com/Kaweeshachamodk/Base
+RUN git clone https://github.com/Kaweeshachamodk/DataBase
 
 CMD ["node", "index.js"]
