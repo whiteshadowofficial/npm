@@ -8,7 +8,7 @@ WhatsAsena - Yusuf Usta
 
 const chalk = require('chalk');
 const {WAConnection, MessageOptions, MessageType} = require('@adiwajshing/baileys');
-const {StringSession} = require('./julie/');
+const {StringSession} = require('./DataBase/');
 const fs = require('fs');
 
 async function whatsAsena () {
@@ -33,7 +33,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         );
         
         if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `ASENA_SESSION="${st}"`);
+            fs.writeFileSync('config.env', `STEFANIE_SESSION="${st}"`);
         }
         if (conn.user.jid.startsWith('90')) {
             await conn.sendMessage(conn.user.jid,st, MessageType.text)
@@ -46,7 +46,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
             await conn.sendMessage(conn.user.jid,st, MessageType.text)
             await conn.sendMessage(conn.user.jid,'*Do Not Share This Code With Anyone!*', MessageType.text)
             console.log(
-                chalk.blue.bold('If you are installing locale, you can start the bot with node bot.js')
+                chalk.blue.bold('If you are installing locale, you can start the bot with node index.js')
             );
         }
         
