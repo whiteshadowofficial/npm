@@ -1,9 +1,8 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+/* # Exclusively from VIRUS FUCKER Project 
+# Do not use this fore any commercial thing
+# Do not edit (Respect to the Devaoloper) 
+# All rights reserved VIRUS FUCKER https://Wa.me/94779529221
+# Credit : usufusta-whatsappAsena
 */
 
 const Asena = require('../events');
@@ -89,7 +88,7 @@ Asena.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DES
             await new Promise(r => setTimeout(r, 400))
             fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
         }
-        else if (response.body.includes('formation') && !match[1].includes('phaticusthiccy')) {
+        else if (response.body.includes('formation') && !match[1].includes('Kaweeshachamodk')) {
             await message.client.sendMessage(message.jid, LANG.harmful, MessageType.text)
             await new Promise(r => setTimeout(r, 400))
             fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
