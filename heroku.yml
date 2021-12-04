@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /DataBase/cmd/Dockerfile
+      worker: /DataBase/Cmd/Dockerfile
 run:
    worker: npm start
